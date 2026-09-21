@@ -2,10 +2,9 @@ class Solution {
 public:
     string mergeAlternately(string word1, string word2) {
         string result = "";
-        result.reserve(word1.length() + word2.length());
         
         int i = 0, j = 0;
-        int m = word1.length(), n = word2.length();
+        int m = word1.size(), n = word2.size();
         
         while (i < m || j < n) {
             if (i < m) {
