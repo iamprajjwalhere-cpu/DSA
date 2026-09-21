@@ -1,10 +1,7 @@
-#include <string>
-
 class Solution {
 public:
-    std::string mergeAlternately(std::string word1, std::string word2) {
-        std::string result = "";
-
+    string mergeAlternately(string word1, string word2) {
+        string result = "";
         result.reserve(word1.length() + word2.length());
         
         int i = 0, j = 0;
