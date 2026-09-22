@@ -1,19 +1,19 @@
 class Solution {
 public:
     string reverseOnlyLetters(string s) {
-        int i = 0;
-        int j = s.length() - 1;
-        while (i < j) {
-            if (isalpha(s[i]) && isalpha(s[j])) {
-                swap(s[i], s[j]);
-                i++;
-                j--;
+        int p=0;
+        int q=s.size()-1;
+        while (p<q){
+            if (isalpha(s[p]) && isalpha(s[q])){
+                swap(s[p], s[q]);
+                p++;
+                q--;
             }
-            if (!isalpha(s[i])) {
-                i++;
+            if(!isalpha(s[p])){
+                p++;
             }
-            if (!isalpha(s[j])) {
-                j--;
+            if(!isalpha(s[q])) {
+                q--;
             }
         }
         return s;
