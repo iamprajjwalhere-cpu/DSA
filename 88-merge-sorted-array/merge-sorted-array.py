@@ -16,4 +16,4 @@ class Solution:
         while p2 >= 0:
             nums1[p] = nums2[p2]
             p2 -= 1
-            p -= 1
+            p -= 1     
