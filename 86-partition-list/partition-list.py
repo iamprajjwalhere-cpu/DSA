@@ -5,8 +5,8 @@
 #         self.next = next
 class Solution:
     def partition(self, head: ListNode | None, x: int) -> ListNode | None:
-        small = ListNode(0)
-        big = ListNode(0)
+        small = ListNode()
+        big = ListNode()
 
         p1 = small
         p2 = big
